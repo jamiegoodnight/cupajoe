@@ -7,7 +7,7 @@
 
 ![CoffeeScript](https://i.imgur.com/qbkT8v5.png)
 
-> Today, CoffeeScript is largely forgotten, but we can still use it to study transpilation, the process of taking source code in one programming language and producing an output in a different one. Transpilation is code translation. In this case, CoffeeScript will transpile into JavaScript.
+> Today, CoffeeScript is largely forgotten, but we can still use it to study transpilation. "Code translation", that is. In this case, CoffeeScript will transpile into JavaScript.
 
 ## Install
 
