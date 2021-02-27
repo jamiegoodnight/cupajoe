@@ -8,25 +8,25 @@ nickel=0
 dime=0
 
 recursion = (totalDifference) -> 
-    console.log totalDifference
+    console.log totalDifference + " inside recursion"
     if totalDifference-25 >= 0
         quarter++
         totalDifference=totalDifference-25
-        return recursion = (totalDifference) ->
+        return recursion(totalDifference)
     if totalDifference-10 >= 0
         quarter++
         totalDifference=totalDifference-10
-        return recursion = (totalDifference) ->
+        return recursion(totalDifference)
     if totalDifference-5 >= 0
         quarter++
         totalDifference=totalDifference-5
-        return recursion = (totalDifference) ->
+        return recursion(totalDifference)
     if totalDifference-1 >= 0
         quarter++
         totalDifference=totalDifference-1
-        return recursion = (totalDifference) ->
+        return recursion(totalDifference)
     else 
-        return [quarter, dime, nickel, penny]
+        return console.log [quarter, dime, nickel, penny]
 
 changeMaker = (price, payment) -> 
   newArr = payment.map (x) -> x * 100
@@ -34,8 +34,8 @@ changeMaker = (price, payment) ->
   console.log newArr
   totalPay = newArr.reduce (x, y) -> x + y
   totalDifference=totalPay-newPrice
-  console.log totalDifference, " is my totalDifference"
-  return recursion = (totalDifference)
+  console.log totalDifference + " is my totalDifference"
+  return recursion(totalDifference) 
 
 
 changeMaker(0.5, [0.25, 0.25, 0.25])
