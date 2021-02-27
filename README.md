@@ -14,3 +14,15 @@
 ```sh
 npm install -g coffescript
 ```
+
+## Compile
+
+```sh
+coffee -c frenchroast.coffee
+```
+
+## Run
+
+```sh
+coffee frenchroast.coffee
+```
