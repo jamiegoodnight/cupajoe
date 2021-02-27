@@ -14,28 +14,27 @@
   dime = 0;
 
   recursion = function(totalDifference) {
-    console.log(totalDifference);
     if (totalDifference - 25 >= 0) {
       quarter++;
       totalDifference = totalDifference - 25;
-      return recursion = function(totalDifference) {};
+      return recursion(totalDifference);
     }
     if (totalDifference - 10 >= 0) {
       quarter++;
       totalDifference = totalDifference - 10;
-      return recursion = function(totalDifference) {};
+      return recursion(totalDifference);
     }
     if (totalDifference - 5 >= 0) {
       quarter++;
       totalDifference = totalDifference - 5;
-      return recursion = function(totalDifference) {};
+      return recursion(totalDifference);
     }
     if (totalDifference - 1 >= 0) {
       quarter++;
       totalDifference = totalDifference - 1;
-      return recursion = function(totalDifference) {};
+      return recursion(totalDifference);
     } else {
-      return [quarter, dime, nickel, penny];
+      return console.log([quarter, dime, nickel, penny]);
     }
   };
 
@@ -51,7 +50,7 @@
     });
     totalDifference = totalPay - newPrice;
     console.log(totalDifference, " is my totalDifference");
-    return recursion = totalDifference;
+    return recursion(totalDifference);
   };
 
   changeMaker(0.5, [0.25, 0.25, 0.25]);
